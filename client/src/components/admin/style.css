@@ -1,0 +1,77 @@
+/* NewEvent.css */
+
+.Event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #f7f7f7;
+}
+
+.newEventContainer {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.createEventForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.createEventForm h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.createEventForm div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.createEventForm input[type="text"],
+.createEventForm input[type="date"],
+.createEventForm input[type="file"],
+.createEventForm input[type="number"],
+.createEventForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.createEventForm textarea {
+  resize: vertical;
+}
+
+.createEventForm button[type="submit"] {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.createEventForm button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#createProductFormFile > input::file-selector-button:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+#createProductFormImage {
+  width: 100%;
+  overflow: auto;
+}
+
+#createProductFormImage > img {
+  width: 3vmax;
+  margin: 0 0.5vmax;
+}
